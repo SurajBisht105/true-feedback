@@ -2,16 +2,16 @@
 
 # True-Feedback
 
-An application that allows users to receive anonymous feedback and messages from anyone using a unique URL. The platform employs **Open AI** to suggest relevant messages and feedback based on user input. Built with **Next.js 15** and **MongoDB**, this project also ensures user security with email OTP verification, password encryption, and user login through **NextAuth**.
+An application that allows users to receive anonymous feedback and messages from anyone using a unique URL. The platform employs **Open AI** to suggest relevant messages and feedback based on user input. Built with **Next.js** and **MongoDB**, this project also ensures user security with email OTP verification, password encryption, and user login through **NextAuth**.
 
-**Currently deployed on [Vercel](https://vercel.com/)**.
+
 
 ---
 
 ## Features
 
 - **Anonymous Feedback**: Users can receive feedback or messages anonymously via a unique, shareable URL.
-- **Gemini AI Suggestions**: The app uses **Gemini AI** to intelligently suggest relevant feedback based on user interaction.
+- **Open AI Suggestions**: The app uses **Open AI** to intelligently suggest relevant feedback based on user interaction.
 - **Secure Login**: Users can securely log in using their credentials, which are verified through **NextAuth**.
 - **Email OTP Verification**: Upon registration, users verify their email via OTP for added security.
 - **Password Encryption**: Passwords are securely encrypted to protect user data.
@@ -22,12 +22,11 @@ An application that allows users to receive anonymous feedback and messages from
 
 ## Tech Stack
 
-- **Frontend**: [Next.js 15](https://nextjs.org/)
-- **Backend**: [Node.js](https://nodejs.org/) (via Next.js API Routes)
-- **Database**: [MongoDB](https://www.mongodb.com/)
-- **Authentication**: [NextAuth.js](https://next-auth.js.org/) (with email OTP and password encryption)
-- **AI**: [Gemini AI](https://www.google.com/search?q=gemini+ai) for feedback suggestions
-- **Other Libraries**: [Resend Email](https://resend.com/), [ShadCN](https://github.com/ShadCN)
+- **Frontend**: Next.js
+- **Backend**: Node.js
+- **Database**: MongoDB
+- **Authentication**: NextAuth.js
+- **AI**: Open AI
 
 ---
 
@@ -36,7 +35,7 @@ An application that allows users to receive anonymous feedback and messages from
 ### 1. Clone the repository
 First, clone the repository to your local machine:
 ```bash
-git clone https://github.com/binarybreez/Anonymous-Message.git
+git clone https://github.com/SurajBisht105/true-feedback.git
 cd anonymous-feedback
 ```
 
@@ -53,8 +52,9 @@ NEXT_PUBLIC_MONGODB_URI=<Your MongoDB URI>
 NEXTAUTH_SECRET=<Your NextAuth Secret>
 NEXTAUTH_URL=http://localhost:3000
 RESEND_API_KEY=<Your Resend API Key>
+OPENAI_API_KEY=<Your OpenAi API Key>
 ```
-Replace `<Your MongoDB URI>`, `<Your NextAuth Secret>`, and `<Your Resend API Key>` with your actual values.
+Replace `<Your MongoDB URI>`,`<Your OpenAi API Key>`, `<Your NextAuth Secret>`, and `<Your Resend API Key>` with your actual values.
 
 ### 4. Run the application
 After setting up the environment variables, you can start the development server:
@@ -80,12 +80,6 @@ The application should now be live at `http://localhost:3000`.
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Acknowledgments
 
 - **Resend Email Service**: For the email OTP functionality.
@@ -93,11 +87,4 @@ This project is licensed under the [MIT License](LICENSE).
 - **Next.js**: For the framework and API routes.
 
 
----
 
-## Contact & Contributing
-
-Feel free to reach out for any questions, suggestions, or feedback:
-
-- **Twitter**: [@yourTwitterHandle](https://twitter.com/yourTwitterHandle)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/yourLinkedIn)
