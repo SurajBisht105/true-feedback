@@ -36,7 +36,7 @@ An application that allows users to receive anonymous feedback and messages from
 First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/SurajBisht105/true-feedback.git
-cd anonymous-feedback
+cd true-feedback
 ```
 
 ### 2. Install dependencies
